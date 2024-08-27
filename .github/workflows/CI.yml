@@ -17,8 +17,7 @@ jobs:
       - name: run type-checker
         run: npm run type-check
 
-jobs:
-run-static-codebase-analysis:
+  run-test-suite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
