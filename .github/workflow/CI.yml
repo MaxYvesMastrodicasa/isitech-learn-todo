@@ -1,0 +1,19 @@
+name: Continuous Integration Github Action
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-static-codebase-analysis:
+  runs-on: ubuntu-latest
+  steps:
+    -uses: actions/checkout@v4
+    -name: Install dependancies
+    run: npm i
+    -name: run Linter
+    run: npm run lint
+    -name: run formatter
+    run: npm run format
+    -name: run type-checker
+    run: npm run type-check
