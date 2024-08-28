@@ -25,3 +25,12 @@ jobs:
         run: npm i
       - name: run test
         run: npm run test
+
+  run-test-e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependancies
+        run: npm i
+      - name: run test:e2e
+        run: npm run test:e2e

@@ -14,6 +14,7 @@ export const Input: FC<Props> = (props) => {
       type="text"
       onChange={onChange}
       value={value}
+      placeholder="Nourrir le chat"
     />
   );
 };
