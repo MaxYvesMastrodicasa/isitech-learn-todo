@@ -25,10 +25,6 @@ jobs:
         run: npm i
       - name: run test
         run: npm run test
-      - name: Install playwright
-        run: npx playwright install --with-deps
-      - name: Run E2E test
-        run: npm run e2e
 
   run-test-e2e:
     runs-on: ubuntu-latest
