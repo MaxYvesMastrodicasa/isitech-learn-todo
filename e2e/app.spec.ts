@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('should add a new todo item', async ({ page }) => {
 
-  await page.goto('http://localhost:5173');
+  await page.goto('http://localhost:4173');
 
   const input = page.locator('input[placeholder="Nourrir le chat"]');
   const btn = page.locator('text=Add a todo');
